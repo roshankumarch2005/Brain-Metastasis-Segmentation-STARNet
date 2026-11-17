@@ -10,7 +10,7 @@
 
 **STAR-Net** (**S**cale-**T**ransferred **A**ttention for **R**adiosurgery **Net**work) is an efficient 3D deep learning framework designed for multi-compartment brain tumor segmentation and sub-2mm stereotactic radiosurgery (SRS) margin delineation on multi-parametric MRI (T1, T1c, T2, FLAIR). 
 
-Evaluating across a 15-model factorial ablation matrix on the **UCSF Brain Metastases Stereotactic Radiosurgery (UCSF-BMSR)** benchmark (100 patients, 30 held-out test cases), STAR-Net achieves state-of-the-art boundary accuracy while dramatically reducing parameter overhead:
+Evaluating across a 15-model factorial ablation matrix on the **UCSF Brain Metastases Stereotactic Radiosurgery (UCSF-BMSR)** benchmark (412 patients, 448 clinical 3D MRI scans, 5,136 expert-segmented lesions; 418 scans via 5-fold cross-validation, and 30 strictly held-out test scans), STAR-Net achieves state-of-the-art boundary accuracy while dramatically reducing parameter overhead:
 
 | Metric / Specification | Standard nnU-Net Baseline | MedNeXt-M Literature | **STAR-Net Flagship (M10)** | **STAR-Net Edge (Conf15)** |
 | :--- | :---: | :---: | :---: | :---: |
