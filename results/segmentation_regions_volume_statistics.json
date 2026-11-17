@@ -1,0 +1,50 @@
+{
+    "dataset": "UCSF Brain Metastases (UCSF-BMSR)",
+    "num_patients": 448,
+    "binary_analysis": {
+        "total_regions": 4473,
+        "volume_mm3": {
+            "min": 0.18463134765625,
+            "max": 32608.125,
+            "mean": 508.7882701078471,
+            "median": 43.26051449775696,
+            "std": 1860.9718158215878,
+            "p25": 17.015625,
+            "p75": 162.158203125
+        },
+        "clinical_categories": {
+            "punctate_under_0_1ml": 3003,
+            "small_0_1_to_1ml": 1079,
+            "medium_1_to_5ml": 268,
+            "large_over_5ml": 123
+        },
+        "patient_multiplicity": {
+            "solitary_1_lesion": 72,
+            "oligometastatic_2_to_4": 134,
+            "multiple_5_plus": 242,
+            "max_in_single_patient": 116
+        }
+    },
+    "multiclass_analysis": {
+        "enhancing_tumor": {
+            "total_regions": 3575,
+            "mean_mm3": 345.87800486700934,
+            "median_mm3": 37.66698360443115
+        },
+        "peritumoral_edema": {
+            "total_regions": 1725,
+            "mean_mm3": 3123.44119930834,
+            "median_mm3": 94.5
+        },
+        "necrotic_core": {
+            "total_regions": 1464,
+            "mean_mm3": 820.7469438539583,
+            "median_mm3": 51.90470218658447
+        },
+        "whole_tumor_composite": {
+            "total_regions": 4326,
+            "mean_mm3": 1809.0669121610356,
+            "median_mm3": 52.77587378025055
+        }
+    }
+}

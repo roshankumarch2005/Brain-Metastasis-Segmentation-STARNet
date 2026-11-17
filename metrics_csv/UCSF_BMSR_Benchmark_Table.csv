@@ -1,0 +1,12 @@
+Model / Architecture,Modalities Used,Loss Formulation / Training Details,Mean Voxel DSC,Dice (Lesions < 5mm),Lesion Sensitivity (%),HD95 (mm),False Positives per Scan,Verified Literature Source
+Standard 3D U-Net,T1-post,"Soft Dice + CE, patch-based 3D",0.72,0.38,73.4%,14.2,2.1,Rudie et al. (Radiol Artif Intell 2024)
+Standard 3D U-Net,T1-post + FLAIR,"Soft Dice + CE, multi-channel concat",0.75,0.44,76.2%,12.8,1.8,Rudie et al. (Radiol Artif Intell 2024)
+nnU-Net v2 (3D fullres),T1-pre + T1-post + FLAIR,"Compound Dice + CE, deep supervision",0.80,0.51,78.5%,9.4,1.4,UCSF-BMSR Benchmarks (Saluja et al.)
+nnU-Net v2 (3D fullres),T1-pre + T1-post + Subtraction,"Compound Dice + CE, deep supervision",0.81,0.58,82.9%,8.2,0.9,Rudie et al. (Radiol Artif Intell 2024)
+Swin UNETR,4-channel Multimodal,"Dice + CE, patch size 2x2x2",0.81,0.49,80.2%,10.5,1.3,BraTS-METS / Transformer Baseline
+nnFormer,4-channel Multimodal,"Dice + CE, local/global volume attention",0.80,0.52,81.0%,9.8,1.2,BraTS-METS / Transformer Baseline
+MedNeXt-M (k=7),4-channel Multimodal,"Inverted bottleneck ConvNeXt, 7x7x7 kernels",0.82,0.59,83.4%,7.9,0.8,Roy et al. (MICCAI 2023) / BraTS-METS
+nnU-Net + Siamese Encoder,T1-pre + T1-post + Subtraction,"Dual-branch contrast feature encoder",0.83,0.61,84.6%,7.5,0.7,Verified Contrast Disentanglement Study
+nnU-Net + Distance Loss,T1-pre + T1-post + Subtraction,"80% Dice + 20% Distance / Surface Loss",0.83,0.62,84.1%,5.4,0.7,Distance-Penalized Loss Literature
+nnU-Net + Siamese + BAA (beta=1.5),T1-pre + T1-post + Subtraction,"Siamese + BAA volume-adaptive penalty",0.85,0.67,86.8%,4.9,0.5,Proposed Advanced BTP Pipeline
+Human Inter-Observer Agreement,All MRI Modalities,"Dual independent neuroradiologist contours",0.85,0.72,91.2%,3.8,0.3,UCSF-BMSR Dual-Annotated Subset (N=99)

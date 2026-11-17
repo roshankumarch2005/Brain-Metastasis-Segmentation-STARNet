@@ -1,0 +1,66 @@
+# ====================================================================
+# Python Bytecode, Caches & Process IDs
+# ====================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pid
+
+# ====================================================================
+# Virtual Environments (Local Machine Binaries)
+# ====================================================================
+brats_env/
+venv/
+env/
+.env
+
+# ====================================================================
+# Medical Imaging Datasets (Over 400 GB - Never commit to Git)
+# ====================================================================
+data/
+data_downloads/
+nnunet_data/
+*.nii
+*.nii.gz
+*.mha
+*.nrrd
+*.tar.gz
+
+# ====================================================================
+# Large Model Checkpoints & Weights (> 100 MB limit on GitHub)
+# (Upload checkpoints to GitHub Releases or Hugging Face instead)
+# ====================================================================
+*.pth
+*.pt
+*.model
+*.ckpt
+*.bin
+
+# ====================================================================
+# Heavy 3D Interactive HTML Meshes & Scratch Dumps in results/
+# ====================================================================
+results/figures_*_html/
+results/figures_nnunet_overlay/
+results/acdc_*
+results/lits_*
+results/*.html
+results/presentation_figures/*.npy
+results/presentation_figures/**/temp_*
+results/presentation_figures/temp_*
+results/presentation_figures/test_*
+
+# ====================================================================
+# Training & Sweep Logs
+# ====================================================================
+*.log
+sweep_logs/
+training_logs/
+
+# ====================================================================
+# IDE & System Files
+# ====================================================================
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo

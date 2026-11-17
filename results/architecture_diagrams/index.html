@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods 1, 2, and 3: Minimal Architecture Diagrams</title>
+    <style>
+        :root {
+            --bg-body: #0d0e11;
+            --bg-surface: #14161b;
+            --bg-card: #181a20;
+            --border: #282c37;
+            --border-highlight: #474f60;
+            --text-main: #f3f4f6;
+            --text-sub: #9ca3af;
+            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            --font-mono: "JetBrains Mono", Menlo, Consolas, monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1.5rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-back {
+            margin-bottom: 1.5rem;
+        }
+
+        .nav-back a {
+            color: var(--text-sub);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-family: var(--font-mono);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .nav-back a:hover {
+            color: #ffffff;
+        }
+
+        header {
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1.5rem;
+        }
+
+        .kicker {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--text-sub);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.4rem;
+        }
+
+        h1 {
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        p.lead {
+            font-size: 0.98rem;
+            color: var(--text-sub);
+            max-width: 800px;
+        }
+
+        .diagram-section {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border);
+            border-radius: 3px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .diagram-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.75rem;
+        }
+
+        .diagram-title h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .diagram-title p {
+            font-size: 0.85rem;
+            color: var(--text-sub);
+        }
+
+        .diagram-actions {
+            display: flex;
+            gap: 0.6rem;
+        }
+
+        .btn {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            padding: 0.4rem 0.8rem;
+            text-decoration: none;
+            border-radius: 2px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            transition: all 0.15s ease;
+        }
+
+        .btn-primary {
+            background-color: #ffffff;
+            color: #000000;
+            font-weight: 600;
+        }
+
+        .btn-primary:hover {
+            background-color: #e5e7eb;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--text-main);
+            border: 1px solid var(--border-highlight);
+        }
+
+        .btn-outline:hover {
+            border-color: #ffffff;
+            color: #ffffff;
+        }
+
+        .img-container {
+            background-color: #ffffff;
+            padding: 1rem;
+            border-radius: 2px;
+            border: 1px solid var(--border);
+            text-align: center;
+            margin-bottom: 1.25rem;
+        }
+
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .caption {
+            font-size: 0.88rem;
+            color: var(--text-sub);
+            line-height: 1.5;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 1rem 1.25rem;
+            border-radius: 2px;
+        }
+
+        .caption strong {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="nav-back">
+            <a href="../index.html">&larr; Back to Research Portal Dashboard</a>
+        </div>
+
+        <header>
+            <div class="kicker">Department of Electrical Engineering &bull; IIT Tirupati &bull; BTP EE23B009</div>
+            <h1>Architectural Schematics & Mathematical Formulations</h1>
+            <p class="lead">
+                Clean, publication-ready minimal schematics for Methods 1, 2, and 3. Diagrams isolate operational mechanisms, gradient flow barriers, and mathematical transformations without metric clutter.
+            </p>
+        </header>
+
+        <!-- Method 1 -->
+        <section class="diagram-section" id="method1">
+            <div class="diagram-header">
+                <div class="diagram-title">
+                    <h2>Method 1: Inter-Level Feature Consistency Regularization</h2>
+                    <p>Teacher-Student Deep Supervision with Detached Anchor & Quadratic Hinge Discrepancy</p>
+                </div>
+                <div class="diagram-actions">
+                    <a href="Method_1_InterLevel_Architecture.svg" target="_blank" class="btn btn-primary">Vector SVG</a>
+                    <a href="Method_1_InterLevel_Architecture.png" target="_blank" class="btn btn-outline">High-Res PNG</a>
+                </div>
+            </div>
+            <div class="img-container">
+                <img src="Method_1_InterLevel_Architecture.svg" alt="Method 1 Architecture Diagram">
+            </div>
+            <div class="caption">
+                <strong>Mechanism:</strong> Full-resolution decoder stage $d_0$ acts as the spatial teacher. Its gradients are detached ($p_0.\text{detach}()$) to prevent coarse representations from degrading fine boundaries. Deeper stages ($d_1..d_5$) are trilinearly upsampled and penalized via a quadratic hinge function $\max(0, |\text{diff}| - T_r)^2$ with tolerance $T_r = 0.20$. In <strong>Add All</strong>, all 5 levels are constrained; in the <strong>Ablation</strong>, only the deepest bottleneck $d_5 \to d_0$ is constrained.
+            </div>
+        </section>
+
+        <!-- Method 2 -->
+        <section class="diagram-section" id="method2">
+            <div class="diagram-header">
+                <div class="diagram-title">
+                    <h2>Method 2: Decoder-1 Half-Resolution Bypass Architecture</h2>
+                    <p>Eliminating Input Skip Noise via Sub-Voxel Trilinear Reconstruction</p>
+                </div>
+                <div class="diagram-actions">
+                    <a href="Method_2_Decoder1_HalfRes_Architecture.svg" target="_blank" class="btn btn-primary">Vector SVG</a>
+                    <a href="Method_2_Decoder1_HalfRes_Architecture.png" target="_blank" class="btn btn-outline">High-Res PNG</a>
+                </div>
+            </div>
+            <div class="img-container">
+                <img src="Method_2_Decoder1_HalfRes_Architecture.svg" alt="Method 2 Architecture Diagram">
+            </div>
+            <div class="caption">
+                <strong>Mechanism:</strong> Level 0 skip connections inject raw MRI acquisition noise (ringing, vascular gradients) into Decoder 0, creating ragged borders. Method 2 completely bypasses Decoder 0, extracting the primary segmentation from Decoder 1 ($H/2 \times W/2 \times D/2$, $2\times$ receptive field) and upsampling to native resolution using mathematically continuous sub-voxel trilinear interpolation. Slashes parameters by 22% while providing peak fidelity on micro-metastases.
+            </div>
+        </section>
+
+        <!-- Method 3 -->
+        <section class="diagram-section" id="method3">
+            <div class="diagram-header">
+                <div class="diagram-title">
+                    <h2>Method 3: 3D Depthwise Separable Convolutions & Dimension Factorization</h2>
+                    <p>Decoupling 3D Spatial Filtering from Cross-Channel Linear Combination</p>
+                </div>
+                <div class="diagram-actions">
+                    <a href="Method_3_DepthwiseSeparable_Architecture.svg" target="_blank" class="btn btn-primary">Vector SVG</a>
+                    <a href="Method_3_DepthwiseSeparable_Architecture.png" target="_blank" class="btn btn-outline">High-Res PNG</a>
+                </div>
+            </div>
+            <div class="img-container">
+                <img src="Method_3_DepthwiseSeparable_Architecture.svg" alt="Method 3 Architecture Diagram">
+            </div>
+            <div class="caption">
+                <strong>Mechanism:</strong> Replaces dense 3D convolutions ($27 \cdot C_{\text{in}} \cdot C_{\text{out}}$) with a decoupled two-stage operation: 3D Depthwise spatial filtering ($3\times3\times3$, $\text{groups}=C_{\text{in}}$) followed by InstanceNorm + LeakyReLU, followed by 3D Pointwise linear projection ($1\times1\times1$). Achieves ~93% parameter reduction per layer, shrinking network footprint to 1.23M–3.8M parameters and enabling real-time edge execution.
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
+
